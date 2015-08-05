@@ -1,0 +1,82 @@
+<div id="contactPage">
+    {{nav-bar}}
+    <div class="circle-cta"><a href="#" id="phoneCta"></a><a href="#" id="emailCta"></a></div>
+    {{google-map latitude="26.1272867" longitude="-80.2640725" gopt_styles=view.mapStyles map=view.googleMap}}
+    <div class="page-content" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header">
+                        <div class="col-md-3">
+                            <h4><em>Contact Us</em></h4>
+                            <h3>We Can Help</h3>
+                        </div>
+                        <div class="col-md-9">
+                            <div id="contactInfoWrapper">
+                                <div class="contact-info">
+                                    <h1>Address:</h1>
+                                    <p class="contact-text">400 N Pine Island Rd #200<br/>
+                                        Plantation, FL 33324
+                                    </p>
+                                </div>
+                                <div class="contact-info">
+                                    <h1>Phone:</h1>
+                                    <p class="contact-text">
+                                        <a href="tel:9547490500">(954) 749-0500</a>
+                                    </p>
+                                </div>
+                                <div class="contact-info">
+                                    <h1>E-mail:</h1>
+                                    <p class="contact-text">
+                                        <a href="mailto:Contact@BPLawOffice.com">Contact@BPLawOffice.com</a>
+                                    </p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <form name="sentMessage" id="contactForm" novalidate="">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h1>Lets Talk</h1>
+                                <p class="contact-text">ulla porttitor dapibus arcu, quis tempus risus tempor a. Morbi ligula turpis, auctor lacinia dolor sed, molestie volutpat orci. Pellentesque rhoncus mauris sit amet turpis mattis feugiat. Maecenas gravida, neque in consectetur molestie, odio mi vehicula erat, nec feugiat nulla sem sed eros.</p>
+                            </div>
+
+                            <div class="col-md-8 text-center">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" placeholder="Subject *" id="phone" required="" data-validation-required-message="Please enter your phone number.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+                                    </div>
+                                    <div id="success"></div>
+                                    <button class="contactButton" href="">Lets Talk</button>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

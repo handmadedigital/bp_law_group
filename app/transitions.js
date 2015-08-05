@@ -1,0 +1,163 @@
+export default function(){  
+  
+  this.transition(
+    this.fromRoute('tut1'),
+    this.toRoute('tut2'),
+    this.use('toRight'),
+    this.reverse('toLeft')
+  );
+
+  this.transition(
+	    this.toRoute('about'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+
+	this.transition(
+		this.fromRoute('home'),
+		this.toRoute('about'),
+		this.use('toRight'),
+		this.reverse('toLeft')
+	);
+
+	this.transition(
+	    this.toRoute('contact'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+
+	this.transition(
+	    this.toRoute('practice-areas.cruise-ship'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+
+	this.transition(
+	    this.toRoute('practice-areas.defense-base-acts'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+
+	this.transition(
+	    this.toRoute('practice-areas.jones-act'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+
+	this.transition(
+	    this.toRoute('practice-areas.longshore-act'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+
+	this.transition(
+	    this.toRoute('practice-areas.maritime-law'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+
+	this.transition(
+	    this.toRoute('practice-areas.non-appropriated'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+
+	this.transition(
+	    this.toRoute('practice-areas.personal-injury'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+	this.transition(
+	    this.toRoute('countries.guam'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+	this.transition(
+	    this.toRoute('countries.iraq'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+	this.transition(
+	    this.toRoute('countries.japan'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+	this.transition(
+	    this.toRoute('countries.kuwait'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+	this.transition(
+	    this.toRoute('countries.qatar'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+	this.transition(
+	    this.toRoute('countries.afghanistan'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+	this.transition(
+	    this.toRoute('about-dba.dba-backgrounds'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+	this.transition(
+	    this.toRoute('about-dba.dba-claims'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+	this.transition(
+	    this.toRoute('about-dba.dba-comp'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+	this.transition(
+	    this.toRoute('about-dba.dba-injuries'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+	this.transition(
+	    this.toRoute('about-dba.dba-lawyers'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+	this.transition(
+	    this.toRoute('about-dba.what-is-dba'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+	this.transition(
+	    this.toRoute('about-dba.what-to-expect'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+	this.transition(
+	    this.toRoute('about-dba.why-dba-attorney'),
+	    this.use('toLeft'),
+	    this.reverse('toRight')
+	);
+	this.transition(
+	    this.toRoute('about.mario'),
+	    this.use('crossFade'),
+	    this.reverse('crossFade')
+	);
+	this.transition(
+	    this.toRoute('about.randell'),
+	    this.use('crossFade'),
+	    this.reverse('crossFade')
+	);
+	this.transition(
+	    this.toRoute('about.alexander'),
+	    this.use('crossFade'),
+	    this.reverse('crossFade')
+	);
+	this.transition(
+	    this.toRoute('about.genevieve'),
+	    this.use('crossFade'),
+	    this.reverse('crossFade')
+	);
+	
+
+
+}

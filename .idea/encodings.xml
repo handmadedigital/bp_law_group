@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Brocfile.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/components/google-map.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/controllers/navbar.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/router.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/routes/google-map.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/about.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/afghanistan.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/application.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/components/google-map.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/contact.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/countries/afghanistan.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/countries/iraq.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/countries/japan.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/countries/kuwait.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/countries/qatar.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/defense-base-act.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/home.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/japan.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/kuwait.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/navbar.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/navbar.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/practice-area.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/templates/qatar.hbs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/google-map.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/environment.js" charset="UTF-8" />
+  </component>
+</project>
