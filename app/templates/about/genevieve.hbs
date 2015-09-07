@@ -28,37 +28,31 @@
                                 <div class="team-member-icon">
                                     <img src="/imgs/genavive.png" alt="Genavive Baisden Icon Image">
                                 </div>
-                                <div class="about-accordion">
-                                    <div class="accordion-group">
-                                        <div class="accordion-title">
-                                            <a class="accordion-toggle">
-                                                <p><span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Education</p>
-                                            </a>
-                                        </div>
-                                        <div class="accordion-content active">
-                                            <p>Our lawyers take the time to listen to our clients and understand their unique needs and goals. We advise clients of their options and the legal impact of such options.</p>
-                                        </div>
-                                    </div>    
-                                    <div class="accordion-group">
-                                        <div class="accordion-title">
-                                            <a class="accordion-toggle">
-                                                <p><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Experience</p>
-                                            </a>
-                                        </div>
-                                        <div class="accordion-content">
-                                            <p>Our lawyers take the time to listen to our clients and understand their unique needs and goals. We advise clients of their options and the legal impact of such options.</p>
-                                        </div>
-                                    </div>    
-                                    <div class="accordion-group">
-                                        <div class="accordion-title">
-                                            <a class="accordion-toggle">
-                                                <p><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Personal</p>
-                                            </a>
-                                        </div>
-                                        <div class="accordion-content">
-                                            <p>Our lawyers take the time to listen to our clients and understand their unique needs and goals. We advise clients of their options and the legal impact of such options.</p>
-                                        </div>
-                                    </div>    
+                                <div class="about-accordion-wrapper">
+                                    <div class="about-accordion">
+                                        {{#em-accordion configName='bs' selected-idx=1}}
+                                            {{#em-accordion-item title="Education"}}
+                                                <ul>
+                                                    <li>J.D., University of Florida Levin College of Law, 2012</li>
+                                                    <li>B.S., Florida State University, Magna cum laude, 2009</li>
+                                                </ul>
+                                            {{/em-accordion-item}}
+                                            {{#em-accordion-item title="Bar Admissions"}}
+                                                <ul>
+                                                    <li>Florida Bar, 2012</li>
+                                                    <li>Illinois Bar, 2013</li>
+                                                    <li>Middle District of Florida, 2013</li>
+                                                    <li>Southern District of Florida, 2014</li>
+                                                </ul>
+                                            {{/em-accordion-item}}
+                                            {{#em-accordion-item title="Honors & Awards"}}
+                                                <ul>
+                                                    <li>Certificate in Estates & Trusts Practice, 2012</li>
+                                                    <li>Ralph R. Bailey Scholarship Recipient, 2009</li>
+                                                </ul>
+                                            {{/em-accordion-item}}
+                                        {{/em-accordion}}
+                                    </div>         
                                 </div>
                                 
                             </div>
@@ -70,13 +64,13 @@
                                 <div class="intro-video-wrapper">
                                     <div class="image-underline"></div>
                                     <div class="intro-video">
-                                        <img src="/imgs/video-example.png" alt="Mario Perez About Video">
+                                        {{ember-youtube ytid="1ubCWxDT4y8" autoplay=false}}
                                     </div>    
                                 </div>
 
-                                    <p>I’m grateful to have always had strong role models in my life who instilled many values in me, including service, community, and independence, and who encouraged me to pursue a career helping people and giving back to my community. I’ve found that serving as an advocate for individuals who have been injured allows me to do just that. </p>
+                                    <p>Genevieve focuses her practice on representing injured individuals in personal injury claims, Florida State workers’ compensation claims, and claims brought under the Longshore and Harbor Workers’ Compensation Act. Prior to joining Baisden & Perez, Genevieve represented corporations and insurance companies. Her understanding of how these corporate defendants approach litigation provides her a unique perspective, allowing her to better advocate for her clients. </p>
 
-                                    <p>I spent my first few years out of law school defending corporations and insurance companies, and while that gave me valuable insight into how the system works, I didn’t feel like I was helping people in the way I’d always imagined I would as an attorney. So, after a few years, I decided to switch sides. I’m very happy I did. I now find the practice of law much more rewarding, and I feel privileged to now be in a position to serve my clients in meaningful ways, helping them get their lives back on track after an injury.</p>
+                                    <p>Originally from northern Illinois, Genevieve relocated in 2004 to attend the University of Florida.  Graduating with honors in 2007, she received her Bachelor of Science degree in Psychology and was elected to the Phi Beta Kappa Society.  She went on to attend the University of Florida Levin College of Law, from which she received her Juris Doctor, cum laude, in 2012.  While in law school, Genevieve served as a Senior Research Editor for the Florida Law Review and was an active member of the John Marshall Bar Association Governing Board.</p>
                             </div>
                         </div>
                     </div>

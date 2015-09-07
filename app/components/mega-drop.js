@@ -4,6 +4,11 @@ export default Ember.Component.extend({
 	didInsertElement: function(){
 		hoverMenu();
 		adjustWidth();
+		responsiveHeader();
+		$(window).resize(function() {
+        responsiveHeader();
+    	});
+		
 	}
 });
 
@@ -45,6 +50,26 @@ function setWidth()
 		mega_submenu.css({
 			"max-width": menu_width + "px"
 		});
+	}
+}
+
+function responsiveHeader()
+{
+	var window_width = $(window).width();
+	var mainMenu = $('#mainMenu');
+	var mobileMenu = $('#mobileMenu');
+
+	if (window_width < 1450) {
+   		mainMenu.addClass('is-disabled');
+   		mainMenu.removeClass('is-active');
+   		mobileMenu.addClass('is-active');
+   		mobileMenu.removeClass('is-disabled');
+	}
+	else {
+	   mainMenu.removeClass('is-disabled');
+	   mainMenu.addClass('is-active');
+	   mobileMenu.addClass('is-disabled');
+	   mobileMenu.removeClass('is-active');
 	}
 }
 

@@ -27,37 +27,31 @@
                                 <div class="team-member-icon">
                                     <img src="/imgs/mario.png" alt="Mario Perez Icon Image">
                                 </div>
-                                <div class="about-accordion">
-                                    <div class="accordion-group">
-                                        <div class="accordion-title">
-                                            <a class="accordion-toggle">
-                                                <p><span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Education</p>
-                                            </a>
-                                        </div>
-                                        <div class="accordion-content active">
-                                            <p>Our lawyers take the time to listen to our clients and understand their unique needs and goals. We advise clients of their options and the legal impact of such options.</p>
-                                        </div>
-                                    </div>    
-                                    <div class="accordion-group">
-                                        <div class="accordion-title">
-                                            <a class="accordion-toggle">
-                                                <p><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Experience</p>
-                                            </a>
-                                        </div>
-                                        <div class="accordion-content">
-                                            <p>Our lawyers take the time to listen to our clients and understand their unique needs and goals. We advise clients of their options and the legal impact of such options.</p>
-                                        </div>
-                                    </div>    
-                                    <div class="accordion-group">
-                                        <div class="accordion-title">
-                                            <a class="accordion-toggle">
-                                                <p><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Personal</p>
-                                            </a>
-                                        </div>
-                                        <div class="accordion-content">
-                                            <p>Our lawyers take the time to listen to our clients and understand their unique needs and goals. We advise clients of their options and the legal impact of such options.</p>
-                                        </div>
-                                    </div>    
+                                <div class="about-accordion-wrapper">
+                                    <div class="about-accordion">
+                                        {{#em-accordion configName='bs' selected-idx=1}}
+                                            {{#em-accordion-item title="Education"}}
+                                                <ul>
+                                                    <li>J.D., University of Florida Levin College of Law, 2012</li>
+                                                    <li>B.S., Florida State University, Magna cum laude, 2009</li>
+                                                </ul>
+                                            {{/em-accordion-item}}
+                                            {{#em-accordion-item title="Bar Admissions"}}
+                                                <ul>
+                                                    <li>Florida Bar, 2012</li>
+                                                    <li>Illinois Bar, 2013</li>
+                                                    <li>Middle District of Florida, 2013</li>
+                                                    <li>Southern District of Florida, 2014</li>
+                                                </ul>
+                                            {{/em-accordion-item}}
+                                            {{#em-accordion-item title="Honors & Awards"}}
+                                                <ul>
+                                                    <li>Certificate in Estates & Trusts Practice, 2012</li>
+                                                    <li>Ralph R. Bailey Scholarship Recipient, 2009</li>
+                                                </ul>
+                                            {{/em-accordion-item}}
+                                        {{/em-accordion}}
+                                    </div>         
                                 </div>
                                 
                             </div>
@@ -69,7 +63,7 @@
                                 <div class="intro-video-wrapper">
                                     <div class="image-underline"></div>
                                     <div class="intro-video">
-                                        <img src="/imgs/video-example.png" alt="Mario Perez About Video">
+                                        {{ember-youtube ytid="2MmShCDjhv0" autoplay=false}}
                                     </div>    
                                 </div>
 

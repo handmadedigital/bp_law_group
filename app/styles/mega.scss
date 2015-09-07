@@ -65,6 +65,11 @@
 .tgl-megadrop .has-submenu:hover > .tgl-megadrop .has-submenu .submenu-wrapper{
 	display: block;
 }
+
+.submenu-wrapper.mega-full-width div img {
+margin: 25px 25px;
+}
+
 .mega-col-img{
 	padding: 25px;
 }

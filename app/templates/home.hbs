@@ -1,22 +1,59 @@
 <div id="homePage">
     {{nav-bar}}
     <div id="homePageBanner">
-        <div id="slide1Content">
-            <h1><em>Welcome To</em> <br/>
-                Baisden &amp; Perez <br/>Law Office
-            </h1>
 
-            <h2>Experienced South Florida Attorneys</h2>
+        {{#slick-slider autoplay=true arrows=false}}
+            <div class="box">
+                <div class="slideContent" id="slide1">
+                    <div id="triangleOverlay"></div>
+                    <h1><em>Welcome To</em> <br/>
+                        Baisden &amp; Perez <br/>Attorneys at Law
+                    </h1>
 
-            <p>
-                It can be overwhelming to face challenging legal issues, such as divorce or recovering compensation
-                following a serious injury. At the law office of Baisden & Perez, we’re committed to pursuing
-                efficient and successful resolutions to our clients’ legal burdens.
-            </p>
-            <button class="homeButton" href="">Lets Talk</button>
-            <button class="homeButton" href="">Learn More</button>
-        </div>
-        <div id="triangleOverlay"></div>
+                    <h2>Experienced Attorneys</h2>
+
+                    <p>
+                        It can be overwhelming to face challenging legal issues, such as divorce or recovering compensation
+                        following a serious injury. At the law office of Baisden & Perez, we’re committed to pursuing
+                        efficient and successful resolutions to our clients’ legal burdens.
+                    </p>
+                    <button class="homeButton" href="">Lets Talk</button>
+                    <button class="homeButton" href="">Learn More</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="slideContent" id="slide2">
+                    <div id="triangleOverlay"></div>
+                    <h1>
+                        <em>Practice Area</em><br/>
+                        Maritime Law
+                    </h1>
+
+                    <p>
+                         When a dispute arises on the “high seas” – whether the ocean, a river, or even a canal – then the dispute is settled according to the principles of maritime law. The origins of maritime law (or admiralty law as it is sometimes called) date back over a thousand years; today maritime law principles are used to resolve questions surrounding injuries and accidents that occur on waterways and oceans, aboard boats and other vessels, and where residents of two or more countries are involved.
+                    </p>
+                    <button class="homeButton" href="">Lets Talk</button>
+                    <button class="homeButton" href="">Learn More</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="slideContent" id="slide3">
+                    <div id="triangleOverlay"></div>
+                    <h1>
+                        <em>South Florida</em><br/>
+                        Attorneys at Law 
+                    </h1>
+
+                    <p>
+                         Our attorneys are committed to serving all of our clients' legal needs. Therefore, we offer experienced representation in a full range of legal areas.As a small law firm, we are capable of providing clients with the responsive and individualized attention they deserve. However, we also have the experience and resources expected from a larger law firm.
+                    </p>
+                    <button class="homeButton" href="">Lets Talk</button>
+                    <button class="homeButton" href="">Learn More</button>
+                </div>
+            </div>
+        {{/slick-slider}}
     </div>
 
     <div id="homeIntro">
@@ -26,9 +63,7 @@
                 <div class="col-lg-12 text-center">
                     <div class="section-header">
                         <h4><em>Welcome To</em></h4>
-
-                        <h3>Baisden &amp; Perez Law Office</h3>
-
+                        <h3>Baisden &amp; Perez</h3>
                         <div id="headerDivider">
                             <div id="dividerStart"></div>
                         </div>
@@ -38,7 +73,7 @@
                 <div class="col-md-12">
                     <div class="section-content">
                         <div class="col-md-4">
-                            <p class="money-recovered"><em>Over</em><br/>$10,000,000<br/><span>Recovered</span></p>
+                            <p class="money-recovered"><em>Over</em><br/>50 Years<br/><span>Of Combined Legal Experience</span></p>
                         </div>
 
                         <div class="col-md-8">
@@ -46,20 +81,13 @@
                                 <h1>Get To Know Us</h1>
 
                                 <p>
-                                    Nulla porttitor dapibus arcu, quis tempus risus tempor a. Morbi ligula turpis,
-                                    auctor lacinia dolor sed, molestie volutpat orci. Pellentesque rhoncus mauris sit
-                                    amet turpis mattis feugiat. Maecenas gravida, neque in consectetur molestie, odio
-                                    mi vehicula erat, nec feugiat nulla sem sed eros. Ut suscipit elementum quam sed laoreet.
-                                    Fusce nec facilisis tellus. Vestibulum ultricies, augue et ullamcorper dictum, leo leo
-                                    tempus purus, in laoreet mauris libero a turpis.
+                                    It can be overwhelming to face challenging legal issues, such as DBA case or recovering compensation following a serious injury. At the law office of Baisden & Perez, we’re committed to pursuing efficient and successful resolutions to our clients’ legal burdens.Regardless of the legal matter we take on, our clients are always of the utmost concern. Schedule an initial consultation with our skilled lawyers by contacting us today. We serve individuals, families and businesses in Everywhere.
                                     <br/>
                                     <br/>
-                                    Nulla porttitor dapibus arcu, quis tempus risus tempor a. Morbi ligula turpis,
-                                    auctor lacinia dolor sed, molestie volutpat orci. Pellentesque rhoncus mauris sit
-                                    amet turpis mattis feugiat. Maecenas gravida, neque in consectetur molestie, odio
-                                    mi vehicula erat, nec feugiat nulla sem sed eros. Ut suscipit elementum quam sed laoreet.
-                                    Fusce nec facilisis tellus. Vestibulum ultricies, augue et ullamcorper dictum, leo leo
-                                    tempus purus, in laoreet mauris libero a turpis.
+                                    As a small law firm, we are capable of providing clients with the responsive and individualized attention they deserve. However, we also have the experience and resources expected from a larger law firm.
+                                    <br/>
+                                    <br/>
+                                    For quality legal representation, {{#link-to 'contact'}}contact our South Florida law firm{{/link-to}} today. We offer free, confidential consultations.
                                 </p>
                             </div>
                         </div>
@@ -105,7 +133,7 @@
                                 <h3>Name Here</h3>
                                 <h4>Title Here</h4>
                                 <img src="/imgs/placeholder-team-4.png"/>
-                                <p>Nulla porttitor dapibus arcu, quis tempus risus tempor a. Morbi ligula turpis, auctor lacinia dolor sed, molestie volutpat orci. Pellentesque rhoncus mauris sit.</p>
+                                <p>Genevieve focuses her practice on representing injured individuals in personal injury claims, Florida State workers’ compensation claims, and claims brought under the...</p>
                                 <a class="service-btn">Learn More</a>
                             </div>
 
@@ -126,9 +154,9 @@
 
                 <div class="col-lg-12 text-center">
                     <div class="section-header">
-                        <h4><em>Our Services</em></h4>
+                        <h4><em>Our</em></h4>
 
-                        <h3>Areas We Practice</h3>
+                        <h3>Practice Areas</h3>
 
                         <div id="headerDivider">
                             <div id="dividerStart"></div>
@@ -141,38 +169,38 @@
                     <div class="section-content">
 
                         <div class="col-md-4">
-                            <p class="cases-won"><em>Over</em><br/>320<br/><span>DBA Cases Won</span><br/>200<br/><span>Jones Cases Won</span></p>
+                            <p class="cases-won"><em>Over</em><br/>Thousands<br/><span>of Cases Handled</span></p>
                         </div>
 
                         <div class="col-md-8">
                             <div class="services-wrapper">
                                 <div class="col-md-6">
                                     <div class="service-container">
-                                        <div id="icon"><img src="/imgs/icon-1.png"></div>
+                                        <div id="icon"><img src="imgs/icon-1.png"></div>
                                         <h2>Defense Base Act</h2>
-                                        <p class="services">ulla porttitor dapibus arcu, quis tempus risus tempor a. Morbi ligula turpis, auctor lacinia dolor sed, molestie volutpat orci. Pellentesque rhoncus mauris sit amet turpis mattis feugiat. Maecenas gravida, neque in consectetur molestie, odio mi vehicula erat, nec feugiat nulla sem sed eros. </p>
+                                        <p class="services">The DBA was passed to provide protections for civilian employees working on overseas U.S. military bases and installations. In the years since then, its protections have been expanded so that now nearly all employers must carry DBA insurance...</p>
                                         <a class="service-btn">Learn More</a>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="service-container">
-                                        <div id="icon"><img src="/imgs/icon-2.png"></div>
-                                        <h2>Jones Act</h2>
-                                        <p class="services">ulla porttitor dapibus arcu, quis tempus risus tempor a. Morbi ligula turpis, auctor lacinia dolor sed, molestie volutpat orci. Pellentesque rhoncus mauris sit amet turpis mattis feugiat. Maecenas gravida, neque in consectetur molestie, odio mi vehicula erat, nec feugiat nulla sem sed eros. </p>
+                                        <div id="icon"><img src="imgs/icon-2.png"></div>
+                                        <h2>Personal Injury</h2>
+                                        <p class="services">Let’s face it – our world is a dangerous place. Through no fault of our own and with little or no warning, we can find ourselves seriously injured. This can throw our personal lives and the lives of our families into disorder.</p>
                                         <a class="service-btn">Learn More</a>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="service-container">
-                                        <div id="icon"><img src="/imgs/icon-3.png"></div>
+                                        <div id="icon"><img src="imgs/icon-3.png"></div>
                                         <h2>Maritime Law</h2>
-                                        <p class="services">ulla porttitor dapibus arcu, quis tempus risus tempor a. Morbi ligula turpis, auctor lacinia dolor sed, molestie volutpat orci. Pellentesque rhoncus mauris sit amet turpis mattis feugiat. Maecenas gravida, neque in consectetur molestie, odio mi vehicula erat, nec feugiat nulla sem sed eros. </p>
+                                        <p class="services">When a dispute arises on the “high seas” – whether the ocean, a river, or even a canal – then the dispute is settled according to the principles of maritime law. Only an attorney with experience in handling maritime law cases can help ensure your case’s success.</p>
                                         <a class="service-btn">Learn More</a>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="service-container">
-                                        <div id="icon"><img src="/imgs/icon-4.png"></div>
+                                        <div id="icon"><img src="imgs/icon-4.png"></div>
                                         <h2>Workers Comp</h2>
                                         <p class="services">ulla porttitor dapibus arcu, quis tempus risus tempor a. Morbi ligula turpis, auctor lacinia dolor sed, molestie volutpat orci. Pellentesque rhoncus mauris sit amet turpis mattis feugiat. Maecenas gravida, neque in consectetur molestie, odio mi vehicula erat, nec feugiat nulla sem sed eros. </p>
                                         <a class="service-btn">Learn More</a>
@@ -210,7 +238,7 @@
                         <div id="targetAreas">
 
                             <div class="col-md-4">
-                                <h1>Cases To Date</h1>
+                                <h1>Cases Filed To Date</h1>
                                 <div Class="gray-underline"></div>
                                 <p class="total-cases">10,000+<br/><span>Afghanistan</span><br/>3,000+<br/><span>Iraq</span><br/>1,000+<br/><span>Kuwait</span></p>
                             </div>
@@ -1956,78 +1984,6 @@
         </div>
     </div>
 
-
-    <section id="cta" class="cta">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>Contact Us Now &amp; Set Up Your Free Consultation</p>
-                    <button class="contactButton" href="">Lets Talk</button>
-
-                </div>
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-
-
-
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-header">
-                        <h4><em>Contact Us</em></h4>
-
-                        <h3>We Can Help</h3>
-
-                        <div id="headerDivider">
-                            <div id="dividerStart"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-12">
-                    <form name="sentMessage" id="contactForm" novalidate="">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <h1>Lets Talk</h1>
-                                <p class="contact-text">ulla porttitor dapibus arcu, quis tempus risus tempor a. Morbi ligula turpis, auctor lacinia dolor sed, molestie volutpat orci. Pellentesque rhoncus mauris sit amet turpis mattis feugiat. Maecenas gravida, neque in consectetur molestie, odio mi vehicula erat, nec feugiat nulla sem sed eros.</p>
-                            </div>
-
-                            <div class="col-md-8 text-center">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="tel" class="form-control" placeholder="Subject *" id="phone" required="" data-validation-required-message="Please enter your phone number.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea class="form-control" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
-                                    </div>
-                                    <div id="success"></div>
-                                    <button class="contactButton" href="">Lets Talk</button>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+    {{cta-banner}}
+    {{contact-section}}
 </div>
