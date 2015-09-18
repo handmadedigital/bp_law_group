@@ -4,11 +4,13 @@ export default Ember.Component.extend({
 	didInsertElement: function(){
 		hoverMenu();
 		adjustWidth();
+		mobileMenu();
 		responsiveHeader();
+		bpWrapperWidth();
 		$(window).resize(function() {
-        responsiveHeader();
+	        responsiveHeader();
+	        bpWrapperWidth();
     	});
-		
 	}
 });
 
@@ -59,7 +61,7 @@ function responsiveHeader()
 	var mainMenu = $('#mainMenu');
 	var mobileMenu = $('#mobileMenu');
 
-	if (window_width < 1450) {
+	if (window_width < 1600) {
    		mainMenu.addClass('is-disabled');
    		mainMenu.removeClass('is-active');
    		mobileMenu.addClass('is-active');
@@ -73,3 +75,88 @@ function responsiveHeader()
 	}
 }
 
+function bpWrapperWidth()
+{
+	var bpWrapper = $('#bp-web-wrapper');
+	var wrapperWidth = $('#bp-web-wrapper').width();
+
+	console.log('on resize working');
+		$(window).resize(function() {
+	        bpWrapper.css({
+				"width": wrapperWidth + "px"
+			});
+    	});
+	
+}
+
+function mobileMenu()
+{
+	
+	var sideMenu = $('#sideMenu');
+	var sideMenuLi = $('#sideMenu li a');
+	var mobileMenuButton = $('.mobile-menu-button');
+	var mobileMenu = $('#mobileMenu');
+	var bpWrapper = $('#bp-web-wrapper');
+
+	mobileMenuButton.on({
+		click: function(event){
+			console.log('working bitches');
+
+			if (sideMenu.hasClass('is-disabled')) {
+					console.log('working bitches 2');
+					sideMenu.removeClass('is-disabled');
+					sideMenu.addClass('is-active');
+					bpWrapper.animate({
+					    marginLeft: "-300px"
+					  }, 1000, function() {
+					    // Animation complete.
+					  });
+					sideMenu.animate({
+					    marginRight: "0"
+					  }, 1000, function() {
+					    // Animation complete.
+					  });
+					return false;
+					event.prventDefault();
+
+			}
+			else if (sideMenu.hasClass('is-active')){
+					console.log('working bitches 3');
+					sideMenu.removeClass('is-active');
+					sideMenu.addClass('is-disabled');
+					bpWrapper.animate({
+					    marginLeft: "0px"
+					  }, 1000, function() {
+					    // Animation complete.
+					  });
+					sideMenu.animate({
+					    marginRight: "-300px"
+					  }, 1000, function() {
+					    // Animation complete.
+					  });
+					return false;
+					event.prventDefault();
+			}
+		}
+	});
+
+	sideMenuLi.on({
+		click: function(event){
+			console.log('working bitches 4');
+			sideMenu.removeClass('is-active');
+			sideMenu.addClass('is-disabled');
+			bpWrapper.animate({
+			    marginLeft: "0px"
+			  }, 1000, function() {
+			    // Animation complete.
+			  });
+			sideMenu.animate({
+			    marginRight: "-300px"
+			  }, 1000, function() {
+			    // Animation complete.
+			  });
+		}
+	});
+
+	
+}

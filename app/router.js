@@ -32,19 +32,12 @@ export default Router.map(function() {
     this.route('personal-injury');
     this.route('longshore-act');
     this.route('defense-base-acts');
+    this.route('workers-comp');
   });
 
   this.route('mega-menu', function() {
     this.route('countries');
   });
-  this.route('about-dba.why-dba-attorney');
-  this.route('about-dba.what-to-expect');
-  this.route('about-dba.dba-comp');
-  this.route('about-dba.dba-injuries');
-  this.route('about-dba.dba-lawyers');
-  this.route('about-dba.dba-backgrounds');
-  this.route('about-dba.dba-claims');
-  this.route('about-dba.what-is-dba');
 
   this.route('about-dba', function() {
     this.route('what-is-dba');
@@ -57,13 +50,11 @@ export default Router.map(function() {
     this.route('why-dba-attorney');
   });
 
-  this.resource('tut1', function() {});
-  this.resource('tut2', function() {});
-
   this.route('about', function() {
     this.route('mario');
     this.route('randell');
     this.route('genevieve');
     this.route('alexander');
   });
+
 });

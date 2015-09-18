@@ -6,6 +6,9 @@ var app = new EmberApp();
 
 app.import('bower_components/bootstrap/dist/css/bootstrap.css');
 app.import('bower_components/bootstrap/dist/js/bootstrap.js');
+//app.import('vendor/ember-fsm/dist/globals/ember-fsm.js');
+
+
 // Use `app.import` to add additional libraries to the generated
 // output files.
 //
@@ -20,3 +23,4 @@ app.import('bower_components/bootstrap/dist/js/bootstrap.js');
 // along with the exports of each module as its value.
 
 module.exports = app.toTree();
+
