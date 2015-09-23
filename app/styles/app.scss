@@ -624,7 +624,7 @@
       width: 60px;
       border: double 4px #E7D198;
       margin-right: 25px;
-      margin-bottom: 15px;
+      margin-bottom: 5px;
     }
 
     #homeServices #icon img{
@@ -640,9 +640,9 @@
     }
 
     .services-wrapper h2 {
-      margin-top: -5px;
+      margin-top: -10px;
       margin-bottom: 5px;
-      line-height: 20px;
+      line-height: 30px;
     }
 
     .service-container {
@@ -693,9 +693,25 @@
     }
 
     #targetAreas h1{
-      font-size: 48px;
+      font-size: 38px;
       font-style: italic;
-      color: rgb(119, 119, 119);
+      line-height: 38px;
+      color: #777777;
+      margin: 0 0 40px 0;
+
+      em{
+        font-size: 28px;
+        margin-left: 5px;
+        color: #E7D198;
+        line-height: 52px;
+        padding-bottom: 5px;
+      }
+
+      span {
+        font-size: 28px;
+        color: #777;
+        margin: 0 0 0 5px;
+      }
     }
 
     #blog{
