@@ -28,37 +28,31 @@
                                 <div class="team-member-icon">
                                     <img src="/imgs/alex.png" alt="Alexander Baisden Icon Image">
                                 </div>
-                                <div class="about-accordion">
-                                    <div class="accordion-group">
-                                        <div class="accordion-title">
-                                            <a class="accordion-toggle">
-                                                <p><span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Education</p>
-                                            </a>
-                                        </div>
-                                        <div class="accordion-content active">
-                                            <p>Our lawyers take the time to listen to our clients and understand their unique needs and goals. We advise clients of their options and the legal impact of such options.</p>
-                                        </div>
-                                    </div>    
-                                    <div class="accordion-group">
-                                        <div class="accordion-title">
-                                            <a class="accordion-toggle">
-                                                <p><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Experience</p>
-                                            </a>
-                                        </div>
-                                        <div class="accordion-content">
-                                            <p>Our lawyers take the time to listen to our clients and understand their unique needs and goals. We advise clients of their options and the legal impact of such options.</p>
-                                        </div>
-                                    </div>    
-                                    <div class="accordion-group">
-                                        <div class="accordion-title">
-                                            <a class="accordion-toggle">
-                                                <p><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Personal</p>
-                                            </a>
-                                        </div>
-                                        <div class="accordion-content">
-                                            <p>Our lawyers take the time to listen to our clients and understand their unique needs and goals. We advise clients of their options and the legal impact of such options.</p>
-                                        </div>
-                                    </div>    
+                                <div class="about-accordion-wrapper">
+                                    <div class="about-accordion">
+                                        {{#em-accordion configName='bs' selected-idx=1}}
+                                            {{#em-accordion-item title="Education"}}
+                                                <ul>
+                                                    <li>J.D., University of Florida Levin College of Law, 2012</li>
+                                                    <li>B.S., Florida State University, Magna cum laude, 2009</li>
+                                                </ul>
+                                            {{/em-accordion-item}}
+                                            {{#em-accordion-item title="Bar Admissions"}}
+                                                <ul>
+                                                    <li>Florida Bar, 2012</li>
+                                                    <li>Illinois Bar, 2013</li>
+                                                    <li>Middle District of Florida, 2013</li>
+                                                    <li>Southern District of Florida, 2014</li>
+                                                </ul>
+                                            {{/em-accordion-item}}
+                                            {{#em-accordion-item title="Honors & Awards"}}
+                                                <ul>
+                                                    <li>Certificate in Estates & Trusts Practice, 2012</li>
+                                                    <li>Ralph R. Bailey Scholarship Recipient, 2009</li>
+                                                </ul>
+                                            {{/em-accordion-item}}
+                                        {{/em-accordion}}
+                                    </div>         
                                 </div>
                                 
                             </div>
@@ -70,11 +64,15 @@
                                 <div class="intro-video-wrapper">
                                     <div class="image-underline"></div>
                                     <div class="intro-video">
-                                        <img src="/imgs/video-example.png" alt="Mario Perez About Video">
+                                        {{ember-youtube ytid="FogdcUhcFY0" autoplay=false}}
                                     </div>    
                                 </div>
 
-                                    <p>I grew up in a household where law and justice were often the topics of conversation.  From an earlyage, I knew that I wanted to be an attorney and help people through the legal process. Later, when I was studying business in college, I learned how large businesses, and specifically insurance companies, can use their power and resources to gain an advantage over individuals. That’s when I first realized how important an individual’s legal representation is when going up against insurance companies.   Litigation is often the only tool a person has to get the compensation he or she deserves.</p>
+                                    <p>Alex Baisden focuses his practice on representing individuals who have been injured either on the job or by the negligence of another. Alex’s experience includes litigation of personal injury claims, Florida state workers’ compensation claims, and claims under the Longshore and Harbor Workers’ Compensation Act.</p>
+
+                                    <p>Alex was admitted to the Florida Bar in October 2012. He is also licensed to practice law in Illinois and before the U.S. District Courts for the Southern and Middle Districts of Florida.</p>
+
+                                    <p>Alex received his Juris Doctorate from the University of Florida, Levin College of Law. While in law school, he served as a certified legal intern and was awarded a Certificate in Estate & Trusts Practice. Prior to attending law school, Alex graduated Magna Cum Laude from Florida State University with a degree in Business Finance.</p>
                             </div>
                         </div>
                     </div>

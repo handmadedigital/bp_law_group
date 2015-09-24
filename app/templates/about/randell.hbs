@@ -26,39 +26,24 @@
                         <div class="col-md-4">
                             <div class="team-member-wrapper">
                                 <div class="team-member-icon">
-                                    <img src="/imgs/randall.png" alt="Mario Perez Icon Image">
+                                    <img src="/imgs/randall.png" alt="Randall Icon Image">
                                 </div>
-                                <div class="about-accordion">
-                                    <div class="accordion-group">
-                                        <div class="accordion-title">
-                                            <a class="accordion-toggle">
-                                                <p><span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Education</p>
-                                            </a>
-                                        </div>
-                                        <div class="accordion-content active">
-                                            <p>Our lawyers take the time to listen to our clients and understand their unique needs and goals. We advise clients of their options and the legal impact of such options.</p>
-                                        </div>
-                                    </div>    
-                                    <div class="accordion-group">
-                                        <div class="accordion-title">
-                                            <a class="accordion-toggle">
-                                                <p><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Experience</p>
-                                            </a>
-                                        </div>
-                                        <div class="accordion-content">
-                                            <p>Our lawyers take the time to listen to our clients and understand their unique needs and goals. We advise clients of their options and the legal impact of such options.</p>
-                                        </div>
-                                    </div>    
-                                    <div class="accordion-group">
-                                        <div class="accordion-title">
-                                            <a class="accordion-toggle">
-                                                <p><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Personal</p>
-                                            </a>
-                                        </div>
-                                        <div class="accordion-content">
-                                            <p>Our lawyers take the time to listen to our clients and understand their unique needs and goals. We advise clients of their options and the legal impact of such options.</p>
-                                        </div>
-                                    </div>    
+                                <div class="about-accordion-wrapper">
+                                    <div class="about-accordion">
+                                        {{#em-accordion configName='bs' selected-idx=1}}
+                                            {{#em-accordion-item title="Education"}}
+                                                <ul>
+                                                    <li>Juris Doctorate Degree from West Virginia University College of Law</li>
+                                                    <li>Business Degree from Marshall University</li>
+                                                </ul>
+                                            {{/em-accordion-item}}
+                                            {{#em-accordion-item title="Experience"}}
+                                                <ul>
+                                                    <li>Workers Compensation and Personal Injury cases in South Florida for  OVER 20 YEARS!</li>
+                                                </ul>
+                                            {{/em-accordion-item}}
+                                        {{/em-accordion}}
+                                    </div>         
                                 </div>
                                 
                             </div>
@@ -70,7 +55,7 @@
                                 <div class="intro-video-wrapper">
                                     <div class="image-underline"></div>
                                     <div class="intro-video">
-                                        <img src="/imgs/video-example.png" alt="Mario Perez About Video">
+                                        {{ember-youtube ytid="up6mQUkR548" autoplay=false}}
                                     </div>    
                                 </div>
 

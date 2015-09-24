@@ -27,37 +27,31 @@
                                 <div class="team-member-icon">
                                     <img src="/imgs/mario.png" alt="Mario Perez Icon Image">
                                 </div>
-                                <div class="about-accordion">
-                                    <div class="accordion-group">
-                                        <div class="accordion-title">
-                                            <a class="accordion-toggle">
-                                                <p><span class="glyphicon glyphicon-minus" aria-hidden="true"></span> Education</p>
-                                            </a>
-                                        </div>
-                                        <div class="accordion-content active">
-                                            <p>Our lawyers take the time to listen to our clients and understand their unique needs and goals. We advise clients of their options and the legal impact of such options.</p>
-                                        </div>
-                                    </div>    
-                                    <div class="accordion-group">
-                                        <div class="accordion-title">
-                                            <a class="accordion-toggle">
-                                                <p><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Experience</p>
-                                            </a>
-                                        </div>
-                                        <div class="accordion-content">
-                                            <p>Our lawyers take the time to listen to our clients and understand their unique needs and goals. We advise clients of their options and the legal impact of such options.</p>
-                                        </div>
-                                    </div>    
-                                    <div class="accordion-group">
-                                        <div class="accordion-title">
-                                            <a class="accordion-toggle">
-                                                <p><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Personal</p>
-                                            </a>
-                                        </div>
-                                        <div class="accordion-content">
-                                            <p>Our lawyers take the time to listen to our clients and understand their unique needs and goals. We advise clients of their options and the legal impact of such options.</p>
-                                        </div>
-                                    </div>    
+                                <div class="about-accordion-wrapper">
+                                    <div class="about-accordion">
+                                        {{#em-accordion configName='bs' selected-idx=1}}
+                                            {{#em-accordion-item title="Education"}}
+                                                <ul>
+                                                    <li>Florida International University, BS Criminal Justice, 1994, Magna Cum Laude</li>
+                                                    <li>University of Florida, Juris Doctrate, 1997, High Honors</li>
+                                                </ul>
+                                            {{/em-accordion-item}}
+                                            {{#em-accordion-item title="Bar Admissions"}}
+                                                <ul>
+                                                    <li>Florida Bar, 2012</li>
+                                                    <li>Southern and Norther District of Florida</li>
+                                                    <li>Middle District of Florida, 2013</li>
+                                                    <li>United States Court of Appeals for the 11th Circuit</li>
+                                                </ul>
+                                            {{/em-accordion-item}}
+                                            {{#em-accordion-item title="Publications"}}
+                                                <ul>
+                                                    <li>Fla Bar Journal Vol. LXXIV, No. 1, January 2000 pp73-7</li>
+                                                    <li>Fla Bar Journal, Vol. LXXV, No. 2, February 2001 pp 57-61</li>
+                                                </ul>
+                                            {{/em-accordion-item}}
+                                        {{/em-accordion}}
+                                    </div>         
                                 </div>
                                 
                             </div>
@@ -69,7 +63,7 @@
                                 <div class="intro-video-wrapper">
                                     <div class="image-underline"></div>
                                     <div class="intro-video">
-                                        <img src="/imgs/video-example.png" alt="Mario Perez About Video">
+                                        {{ember-youtube ytid="2MmShCDjhv0" autoplay=false}}
                                     </div>    
                                 </div>
 
