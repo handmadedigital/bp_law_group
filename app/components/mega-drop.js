@@ -109,12 +109,12 @@ function mobileMenu()
 					sideMenu.addClass('is-active');
 					bpWrapper.animate({
 					    marginLeft: "-300px"
-					  }, 1000, function() {
+					  }, 600, function() {
 					    // Animation complete.
 					  });
 					sideMenu.animate({
 					    marginRight: "0"
-					  }, 1000, function() {
+					  }, 600, function() {
 					    // Animation complete.
 					  });
 					return false;
@@ -127,12 +127,12 @@ function mobileMenu()
 					sideMenu.addClass('is-disabled');
 					bpWrapper.animate({
 					    marginLeft: "0px"
-					  }, 1000, function() {
+					  }, 600, function() {
 					    // Animation complete.
 					  });
 					sideMenu.animate({
 					    marginRight: "-300px"
-					  }, 1000, function() {
+					  }, 600, function() {
 					    // Animation complete.
 					  });
 					return false;
@@ -148,12 +148,12 @@ function mobileMenu()
 			sideMenu.addClass('is-disabled');
 			bpWrapper.animate({
 			    marginLeft: "0px"
-			  }, 1000, function() {
+			  }, 600, function() {
 			    // Animation complete.
 			  });
 			sideMenu.animate({
 			    marginRight: "-300px"
-			  }, 1000, function() {
+			  }, 600, function() {
 			    // Animation complete.
 			  });
 		}
