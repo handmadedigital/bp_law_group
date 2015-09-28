@@ -14,41 +14,18 @@
                 </div>
 
                 <div class="col-md-12">
-                    <form name="sentMessage" id="contactForm" novalidate="">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <h1>Let's Talk</h1>
-                                <p class="contact-text">The law firm of Baisden & Perez is committed to helping clients everywhere. Our lawyers provide experienced quality legal representation focused on our clients' legal needs and goals. Contact us to schedule an initial consultation.</p>
-                            </div>
-
-                            <div class="col-md-8 text-center">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="tel" class="form-control" placeholder="Subject *" id="phone" required="" data-validation-required-message="Please enter your phone number.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea class="form-control" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
-                                    </div>
-                                    <div id="success"></div>
-                                    <button class="contactButton" href="">Let's Talk</button>
-                                </div>
-
-
-                            </div>
-                        </div>
+                    <form {{action 'sendMandrillEmail' on="submit"}}>
+                      <label for="from_name">From:</label><br/>
+                      {{input id="from_name" type="text" value=fromName placeholder="Name"}}<br/>
+                      {{input id="from_email" type="email" value=fromEmail placeholder="Email"}}<br/>
+                      <label for="email_subject">Subject:</label><br/>
+                      {{input id="email_subject" type="text" value=emailSubject}}<br/>
+                      <label for="to_name">To:</label><br/>
+                      {{input id="to_name" type="text" value=toName placeholder="Name"}}<br/>
+                      {{input id="to_email" type="text" value=toEmail placeholder="Email"}}<br/>
+                      <label for="email_message">Message:</label><br/>
+                      {{textarea id="email_message" value=emailMessage cols="80" rows="6" placeholder="Message to be sent"}}<br/>
+                      <button type="submit">Send Email</button>
                     </form>
                 </div>
             </div>

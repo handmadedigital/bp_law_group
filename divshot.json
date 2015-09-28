@@ -1,5 +1,5 @@
 {
-  "name": "bp-law-beta-2",
+  "name": "bp-test",
   "root": "./dist",
   "routes": {
     "/tests": "tests/index.html",

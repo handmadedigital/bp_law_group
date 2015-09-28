@@ -32,6 +32,21 @@ module.exports = function(environment) {
     'style-src': "'self' 'unsafe-inline' https://*.googleapis.com  data:"
   };
 
+  ENV['mandrill'] = {
+  api: {
+    host: 'https://mandrillapp.com/api/1.0/',
+    key: 'n-1PMRVHtL2Le8-9WGwi6A'
+  },
+
+  smtp: {
+    host: 'smtp.mandrillapp.com',
+    port: 587,
+    username: 'carlos@tgld.co',
+    password: 'n-1PMRVHtL2Le8-9WGwi6A'
+  }
+
+  };
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;

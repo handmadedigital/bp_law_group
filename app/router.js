@@ -57,4 +57,5 @@ export default Router.map(function() {
     this.route('alexander');
   });
 
+  this.route('home');
 });
