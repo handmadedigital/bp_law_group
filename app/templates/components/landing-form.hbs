@@ -1,0 +1,33 @@
+<form id="leadForm" {{action 'sendMandrillEmail' on="submit"}}>
+        <p class="form-title">
+            Tell us About Your Case!
+        </p>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                {{input type="text" class="form-control" placeholder="Your Name" id="name1"}}
+                <p class="help-block text-danger"></p>
+            </div>
+            <div class="form-group">
+                {{input type="email" class="form-control" placeholder="Your Email" id="email1"}}
+                <p class="help-block text-danger"></p>
+            </div>
+            <div class="form-group">
+                {{input type="tel" class="form-control" placeholder="Your Phone " id="phone1"}}
+                <p class="help-block text-danger"></p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                {{textarea class="form-control" placeholder="Your Message " id="message1"}}
+                <p class="help-block text-danger"></p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-md-12 text-center">
+            <div id="success"></div>
+            <button type="submit" class="confirmation btn btn-l">Get Started!</button>
+            <em class="privacy-text">*We guarantee 100% privacy. Your information will not be shared</em>
+        </div>
+	</div>
+</form>

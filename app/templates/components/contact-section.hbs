@@ -1,33 +1,95 @@
 <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-header">
+                    <div class="col-md-3">
                         <h4><em>Contact Us</em></h4>
-
                         <h3>We Can Help</h3>
-
-                        <div id="headerDivider">
-                            <div id="dividerStart"></div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="no-mobile" id="contactInfoWrapper">
+                            <div class="contact-info">
+                                <h1>Address:</h1>
+                                <p class="contact-text">400 N Pine Island Rd #200<br/>
+                                    Plantation, FL 33324
+                                </p>
+                            </div>
+                            <div class="contact-info">
+                                <h1>Phone:</h1>
+                                <p class="contact-text">
+                                    <a href="tel:9547490500">(954) 749-0500</a>
+                                </p>
+                            </div>
+                            <div class="contact-info">
+                                <h1>E-mail:</h1>
+                                <p class="contact-text">
+                                    <a href="mailto:Contact@BaisdenPerezLaw.com">Contact@BaisdenPerezLaw.com</a>
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-md-12">
-                    <form {{action 'sendMandrillEmail' on="submit"}}>
-                      <label for="from_name">From:</label><br/>
-                      {{input id="from_name" type="text" value=fromName placeholder="Name"}}<br/>
-                      {{input id="from_email" type="email" value=fromEmail placeholder="Email"}}<br/>
-                      <label for="email_subject">Subject:</label><br/>
-                      {{input id="email_subject" type="text" value=emailSubject}}<br/>
-                      <label for="to_name">To:</label><br/>
-                      {{input id="to_name" type="text" value=toName placeholder="Name"}}<br/>
-                      {{input id="to_email" type="text" value=toEmail placeholder="Email"}}<br/>
-                      <label for="email_message">Message:</label><br/>
-                      {{textarea id="email_message" value=emailMessage cols="80" rows="6" placeholder="Message to be sent"}}<br/>
-                      <button type="submit">Send Email</button>
-                    </form>
+            <div class="col-md-12">
+                <div class="no-desktop" id="contactInfoWrapper">
+                    <div class="contact-info">
+                        <h1>Address:</h1>
+                        <p class="contact-text">400 N Pine Island Rd #200<br/>
+                            Plantation, FL 33324
+                        </p>
+                    </div>
+                    <div class="contact-info">
+                        <h1>Phone:</h1>
+                        <p class="contact-text">
+                            <a href="tel:9547490500">(954) 749-0500</a>
+                        </p>
+                    </div>
+                    <div class="contact-info">
+                        <h1>E-mail:</h1>
+                        <p class="contact-text">
+                            <a href="mailto:Contact@BaisdenPerezLaw.com">Contact@BaisdenPerezLaw.com</a>
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
+                <form {{action 'sendMandrillEmail' on="submit"}} name="contactform">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h1>Let's Talk</h1>
+                            <p class="contact-text">The law firm of Baisden & Perez is committed to helping clients everywhere. Our lawyers provide experienced quality legal representation focused on our clients' legal needs and goals. Contact us to schedule an initial consultation.</p>
+                        </div>
+
+                        <div class="col-md-8 text-center">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    {{input type="text" name="name" class="form-control" placeholder="Your Name *" id="name" value=name}}
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    {{input type="email" name="email" class="form-control" placeholder="Your Email *" id="email" value=email}}
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    {{input type="subject" name="subject" class="form-control" placeholder="Subject *" id="subject" value=subject}}
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    {{textarea name="message" class="form-control" placeholder="Your Message *" id="message" value=message}}
+                                </div>
+                                <div id="success"></div>
+                                <a type="submit" value="Submit"> <button class="contactButton">Let's Talk</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+</div>

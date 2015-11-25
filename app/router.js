@@ -7,6 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('home', {path: '/'});
+  this.route('landing-page');
   this.route('about');
   this.route('defense-base-act');
   this.route('contact');
@@ -58,4 +59,5 @@ export default Router.map(function() {
   });
 
   this.route('home');
+
 });

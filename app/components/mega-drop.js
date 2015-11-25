@@ -80,13 +80,9 @@ function bpWrapperWidth()
 {
 	var bpWrapper = $('#bp-web-wrapper');
 	var wrapperWidth = $('#bp-web-wrapper').width();
-
-	console.log('on resize working');
-		$(window).resize(function() {
-	        bpWrapper.css({
-				"width": wrapperWidth + "px"
-			});
-    	});
+	bpWrapper.css({
+		"width": wrapperWidth + "px"
+	});
 	
 }
 
@@ -101,10 +97,8 @@ function mobileMenu()
 
 	mobileMenuButton.on({
 		click: function(event){
-			console.log('working bitches');
 
 			if (sideMenu.hasClass('is-disabled')) {
-					console.log('working bitches 2');
 					sideMenu.removeClass('is-disabled');
 					sideMenu.addClass('is-active');
 					bpWrapper.animate({
@@ -122,7 +116,6 @@ function mobileMenu()
 
 			}
 			else if (sideMenu.hasClass('is-active')){
-					console.log('working bitches 3');
 					sideMenu.removeClass('is-active');
 					sideMenu.addClass('is-disabled');
 					bpWrapper.animate({
@@ -143,7 +136,6 @@ function mobileMenu()
 
 	sideMenuLi.on({
 		click: function(event){
-			console.log('working bitches 4');
 			sideMenu.removeClass('is-active');
 			sideMenu.addClass('is-disabled');
 			bpWrapper.animate({

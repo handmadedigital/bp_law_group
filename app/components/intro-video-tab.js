@@ -12,9 +12,13 @@ export default Ember.Component.extend({
 			mouseenter: function mouseenter() {
 				console.log("mouse enter");
 				self._mouseInside = true;
-				if (self._tabState === "closed") {
-					self.opening();
-				} 
+				Ember.run.later(() =>
+				{
+					if (self._mouseInside === "true" || self._tabState === "closed") {
+						self.opening();
+					} 	
+					
+				}, 200);
 			},
 			mouseleave: function mouseleave() {
 				console.log("mouse leave");
@@ -63,7 +67,11 @@ export default Ember.Component.extend({
 	},
 	close: function() {
 		console.log("closed");
-		this._tabState = "closed";
+		this._tabState = "closing";
+		Ember.run.later(() =>
+		{	
+			this._tabState = "closed";
+		}, 1200);
 		$('.video-intro-position').animate({
 		    marginRight: "-440px"
 		}, 1000, function() {

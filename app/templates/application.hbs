@@ -1,7 +1,13 @@
 <div id="bp-web-wrapper">
-	{{outlet}}
-	<div class="footer-wrapper">
-	    {{main-footer}}
+	<div {{bind-attr class="isLandingRoute::wrapper"}}>
+	{{#if isLandingRoute}}
+		{{landing-header}}
+	{{/if}}
+		{{outlet}}
+	{{#unless isLandingRoute}}
+	    <div class="footer-wrapper">
+		    {{main-footer}}
+		</div>
+	{{/unless}}
 	</div>
 </div>
-
