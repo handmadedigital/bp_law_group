@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'bp-law-ember',
     environment: environment,
     baseURL: '/',
-    locationType: 'auto',
+    locationType: 'hash',
     contentSecurityPolicy: {
       'default-src': "'none'",
       'script-src': "'self' 'unsafe-inline' 'unsafe-eval'   maps.googleapis.com maps.gstatic.com",

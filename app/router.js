@@ -24,7 +24,7 @@ Router.map(function() {
 });
 
 export default Router.map(function() {
-  this.route('practice-areas', function() {
+  this.resource('practice-areas', function() {
     this.route('non-appropriated');
     this.route('cruise-ship');
     this.route('outer-lands');
@@ -36,11 +36,11 @@ export default Router.map(function() {
     this.route('workers-comp');
   });
 
-  this.route('mega-menu', function() {
+  this.resource('mega-menu', function() {
     this.route('countries');
   });
 
-  this.route('about-dba', function() {
+  this.resource('about-dba', function() {
     this.route('what-is-dba');
     this.route('dba-backgrounds');
     this.route('dba-claims');
@@ -51,13 +51,14 @@ export default Router.map(function() {
     this.route('why-dba-attorney');
   });
 
-  this.route('about', function() {
+  this.resource('about', function() {
     this.route('mario');
     this.route('randell');
     this.route('genevieve');
     this.route('alexander');
   });
 
+  this.route('landing-page');
   this.route('home');
 
 });

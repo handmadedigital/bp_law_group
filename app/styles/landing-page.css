@@ -516,6 +516,7 @@ i.fa.fa-phone {
     header .cta-form-wrapper {
         margin-top: 160px;
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        margin-bottom: 80px;
 
     }
 
@@ -1422,7 +1423,7 @@ body {
     margin-top: 100px;
 }
 
-@media (max-width: 990px) {
+@media all and (max-width: 990px) {
   header .cta-form-wrapper {
         width: 80%;
         margin: 40px auto;
@@ -1453,4 +1454,40 @@ body {
     padding: 0 0 40px 0;
     margin-bottom: 20px;
     }
+}
+
+@media all and (max-width: 590px) {
+    header .intro-text {
+        padding-top: 60px;
+        font-size: 28px;
+    }
+
+    .intro-tagline {
+        font-size: 18px;
+        line-height: 22px;
+        margin: 14px 0 8px 0;
+    }
+
+    .check-mark-bullet p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .cta-form-wrapper {
+        margin-bottom: -20px;
+    }
+
+    .cases-won {
+        padding: 40px 0 30px 0;
+    }
+
+    .circle-cta-landing {
+        position: fixed;
+        border-radius: 40px;
+        height: 40px;
+        width: 40px;
+        bottom: 20px; 
+        right: 20px;
+    }
+
 }
