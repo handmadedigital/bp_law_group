@@ -6,30 +6,30 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'hash',
-    contentSecurityPolicy: {
-      'default-src': "'none'",
-      'script-src': "'self' 'unsafe-inline' 'unsafe-eval'   maps.googleapis.com maps.gstatic.com",
-      'font-src': "'self' data: fonts.gstatic.com"
-      
-    },
+    googleFonts: [
+      'Open+Sans:300',
+      'Roboto:300'
+    ],
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
       }
     },
-
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self' 'unsafe-inline' http://maps.googleapis.com https://www.youtube.com https://s.ytimg.com http://cdn.inspectlet.com http://hn.inspectlet.com", // Allow scripts from https://cdn.mxpnl.com
+      'font-src': "'self' data: http://fonts.gstatic.com http://fonts.googleapis.com https://fonts.gstatic.com", // Allow fonts to be loaded from http://fonts.gstatic.com
+      'connect-src': "'self' http://hn.inspectlet.com wss://inspectletws.herokuapp.com/", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
+      'img-src': "'self' data: http://csi.gstatic.com http://hn.inspectlet.com/",
+      'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com https://fonts.googleapis.com", // Allow inline styles and loaded CSS from http://fonts.googleapis.com
+      'media-src': "'self'",
+      'frame-src': "'self' https://www.youtube.com" // `media-src` will be omitted from policy, browser will fallback to default-src for media resources.
     }
-  };
-
-  ENV.contentSecurityPolicy = {
-    'script-src': "'self' 'unsafe-eval' https://*.googleapis.com https://*.gstatic.com  data:",
-    'img-src': "'self' https://*.googleapis.com https://*.gstatic.com data:",
-    'font-src': "'self' https://*.gstatic.com  data:",
-    'style-src': "'self' 'unsafe-inline' https://*.googleapis.com  data:"
   };
 
   ENV['mandrill'] = {
@@ -58,6 +58,7 @@ module.exports = function(environment) {
   ENV.googleMap = {
     // your configuration goes here
   };
+
 
   if (environment === 'test') {
     // Testem prefers this...
