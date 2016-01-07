@@ -36,6 +36,51 @@ $break-xl: 1600px;
     -o-transition: 0.6s;
 }
 
+#phoneCircleIcon {
+    float: left;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 20px 20px;
+    border-radius: 100%;
+    background: #E7D198;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+    img {
+        margin: 12px;
+    }
+}
+
+.landing-cta {
+    position: fixed;
+    bottom: 0;
+    background: #252f35;
+    width: 100%;
+    z-index: 9999;
+    padding: 0 5px;
+    background: rgba(37, 47, 53, 0.9);
+
+    p {
+    line-height: 28px;
+    letter-spacing: 2px;
+    color: #fff;
+    float: left;
+    margin: 22px 0 0 20px;
+    font-size: 20px;
+    width: calc(100% - 120px);
+
+    b{
+        font-size: 34px;
+    }
+    }
+}
+
 .img-centered {
     margin: 0 auto;
 }
