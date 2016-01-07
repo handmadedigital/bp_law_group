@@ -1190,7 +1190,7 @@ body{
 
   .no-desktop{
     display: none;
-    @media screen and (max-width: $break-s) {
+    @media screen and (max-width: $break-m) {
         display: block;
     }
   }

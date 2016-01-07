@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html>
+
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="/imgs/favicon.png">
+    <title>Baisden &amp; Perez Attorneys at Law</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{content-for 'head'}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/bp-law-ember.css">
+
+    {{content-for 'head-footer'}}
+
+  </head>
+
+  <body>
+
+    {{content-for 'body'}}
+
+    <script src="assets/vendor.js"></script>
+    <script src="assets/bp-law-ember.js"></script>
     <!-- Begin Inspectlet Embed Code -->
     <script type="text/javascript" id="inspectletjs">
     window.__insp = window.__insp || [];
@@ -21,30 +44,8 @@
       ga('send', 'pageview');
 
     </script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" 
-      type="image/png" 
-      href="/imgs/favicon.png">
-    <title>Baisden &amp; Perez Attorneys at Law</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    {{content-for 'head'}}
-
-    <link rel="stylesheet" href="assets/vendor.css">
-    <link rel="stylesheet" href="assets/bp-law-ember.css">
-
-    {{content-for 'head-footer'}}
-  </head>
-  <body>
-    {{content-for 'body'}}
-
-    <script src="assets/vendor.js"></script>
-    <script src="assets/bp-law-ember.js"></script>
-    
-
 
     {{content-for 'body-footer'}}
+
   </body>
 </html>

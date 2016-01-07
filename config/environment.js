@@ -22,7 +22,7 @@ module.exports = function(environment) {
     },
     contentSecurityPolicy: {
       'default-src': "'none'",
-      'script-src': "'self' 'unsafe-inline' http://maps.googleapis.com https://www.youtube.com https://s.ytimg.com http://cdn.inspectlet.com http://hn.inspectlet.com", // Allow scripts from https://cdn.mxpnl.com
+      'script-src': "'self' 'unsafe-inline' http://www.google-analytics.com https://www.google-analytics.com http://maps.googleapis.com https://www.youtube.com https://s.ytimg.com http://cdn.inspectlet.com http://hn.inspectlet.com", // Allow scripts from https://cdn.mxpnl.com
       'font-src': "'self' data: http://fonts.gstatic.com http://fonts.googleapis.com https://fonts.gstatic.com https://fonts.googleapis.com" , // Allow fonts to be loaded from http://fonts.gstatic.com
       'connect-src': "'self' http://hn.inspectlet.com wss://inspectletws.herokuapp.com/", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
       'img-src': "'self' data: http://csi.gstatic.com http://hn.inspectlet.com/",
